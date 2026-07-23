@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GWS Weather Station</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.png" class="logo">
+
+<div>
+
+<h1>GWS Solutions</h1>
+<h2>Estación Meteorológica ESP8266</h2>
+
+</div>
+
+</header>
+
+<div class="estado" id="estado">
+
+🟢 Conectado
+
+</div>
+
+<div class="contenedor">
+
+<div class="card">
+
+<h3>🌡 Temperatura</h3>
+
+<p id="tempC">-- °C</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌡 Fahrenheit</h3>
+
+<p id="tempF">-- °F</p>
+
+</div>
+
+<div class="card">
+
+<h3>💧 Humedad</h3>
+
+<p id="humedad">-- %</p>
+
+</div>
+
+<div class="card alarma" id="alarma">
+
+<h3>🚨 Alarma</h3>
+
+<p id="estadoAlarma">Sin datos</p>
+
+</div>
+
+</div>
+
+<div class="ultima">
+
+Última actualización
+
+<br>
+
+<span id="fecha"></span>
+
+</div>
+
+<div class="grafico">
+
+<canvas id="chartTemp"></canvas>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
