@@ -12,7 +12,7 @@ const datos = await respuesta.json();
 
 const ultimo = datos.feeds[datos.feeds.length-1];
 
-document.getElementById("temperatura").innerHTML=ultimo.field1+" C°";
+document.getElementById("tempC").innerHTML=ultimo.field1+" C°";
 
 document.getElementById("humedad").innerHTML=ultimo.field2+" %";
 
