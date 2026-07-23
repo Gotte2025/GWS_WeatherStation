@@ -14,9 +14,7 @@ const ultimo = datos.feeds[datos.feeds.length-1];
 
 document.getElementById("tempC").innerHTML=ultimo.field1+" °C";
 
-document.getElementById("tempF").innerHTML=ultimo.field2+" °F";
-
-document.getElementById("humedad").innerHTML=ultimo.field3+" %";
+document.getElementById("humedad").innerHTML=ultimo.field2+" %";
 
 document.getElementById("fecha").innerHTML=new Date(ultimo.created_at).toLocaleString();
 
