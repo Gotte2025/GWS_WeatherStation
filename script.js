@@ -22,7 +22,7 @@ const alarma=document.getElementById("alarma");
 
 const estado=document.getElementById("estadoAlarma");
 
-if(ultimo.field4=="1"){
+if(ultimo.field7=="1"){
 
 estado.innerHTML="🚨 ACTIVADA";
 
